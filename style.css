@@ -1,0 +1,169 @@
+/* 🌑 Global Styles */
+body {
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* 🔝 Top Bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #1c1c1c;
+}
+
+.topbar .logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* 📦 Container */
+.container {
+  padding: 20px;
+}
+
+/* 🔍 Inputs & Selects */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #222;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* 👥 Donor List */
+#donorList {
+  margin-top: 20px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card .phone {
+  color: #bbb;
+}
+
+.card .blood {
+  color: #ff4c4c;
+  margin-top: 5px;
+}
+
+/* ➕ Add Button */
+#addBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #ff375f;
+  border: none;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 32px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* 📢 Message Box */
+#messageBox {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.success {
+  color: #4caf50; /* green */
+}
+
+.error {
+  color: #ff4c4c; /* red */
+}
+
+/* 📋 Form Box (Bottom Sheet Style) */
+/* 📋 Form Box (Bottom Sheet Style) */
+/* 🔘 Form Buttons Row */
+#formBox .buttonRow {
+  display: flex;
+  gap: 10px;          /* space between buttons */
+  margin-top: 15px;
+}
+
+#formBox button {
+  flex: 1;            /* equal width buttons */
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Save button */
+#formBox button.save {
+  background: #ff375f;
+  color: white;
+}
+
+/* Cancel button */
+#formBox button.cancel {
+  background: #444;
+  color: white;
+}
+
+/* Hover effects for better visibility */
+#formBox button.save:hover {
+  background: #ff4c70;
+}
+
+#formBox button.cancel:hover {
+  background: #666;
+}
+
+
+
+
+/* 🚫 Hidden Utility */
+.hidden {
+  display: none;
+}
+
+/* ⬇️ Bottom Navigation */
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1c1c1c;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomNav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bottomNav button.active {
+  color: #ff375f;
+  font-weight: bold;
+}

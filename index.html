@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="topbar">
+    <img src="blood.jpg" alt="Blood Donor Logo" class="logo">
+    <h1>Blood Donor</h1>
+  </nav>
+
+  <div class="container">
+
+    <!-- Search & Filter -->
+    <input type="text" id="search" placeholder="Search by donor name...">
+
+    <label for="filter">Blood Type:</label>
+    <select id="filter">
+      <option value="All">All</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+    </select>
+
+    <!-- Donor count -->
+    <p id="count"></p>
+
+    <!-- Donor list -->
+    <div id="donorList"></div>
+
+    <!-- Add donor button -->
+    <button id="addBtn" onclick="openForm()">+</button>
+  </div>
+
+  <!-- Message box for success/error -->
+  <div id="messageBox"></div>
+
+  <!-- Add Donor Form -->
+  <div id="formBox" class="hidden">
+    <h2>Add Donor</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="phone" placeholder="Phone">
+    <select id="bloodGroup">
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+    </select>
+
+    <!-- Buttons row -->
+    <div class="buttonRow">
+      <button onclick="addDonor()" class="save">Save</button>
+      <button onclick="closeForm()" class="cancel">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Buttons row -->
+  <div class="buttonRow">
+    <button onclick="addDonor()" class="save">Save</button>
+    <button onclick="closeForm()" class="cancel">Cancel</button>
+  </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="bottomNav">
+    <button class="active">Home</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
